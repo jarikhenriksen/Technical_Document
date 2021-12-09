@@ -1,23 +1,79 @@
 <!DOCTYPE html>
 <style>
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: medium;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: 3%;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 87%;
+    width: 150px;
+    color: black;
+    font-size: larger;
+    padding: 2%;
+    position: fixed;
+    border-style: solid;
+    border-color: rgb(0, 0, 0)
+}
+@media (max-width: 400px){
+    nav {
+        display: none;
+    }
+}
 
-</style>
-<header id=IntroHeader>
-    <h1>An introduction to python</h1>
-</header>
-<nav id='nav-bar'>
-    <header>Intro to Python</header>
-    <ul>
-        <li><a href="#Introduction_to_python">Introduction to python</a></li>
-        <li><a href='#Print_to_console'>Print to console</a></li>
-        <li><a href='#String_basics'>String basics</a></li>
-        <li><a href='#Arithmatic'>Arithmatic</a></li>
-        <li><a href='#Lists'>Lists</a></li>
-        <li><a href='#If...Else'>If...Else</a></li>
-    </ul>
+nav li {
+    padding-top: 15%;
     
-</nav>
+}
+nav a {
+    color: black;
+}
+nav a:link {
+    text-decoration: none;
+}
+nav a:visited {
+    text-decoration: none;
+}
+code {
+    color: rgb(1, 63, 1);
+}
+h2 {
+    text-decoration: underline;
+}
+div a:link {
+    color: blue;
+}
+div {
+    padding-left: 230px;
+}
+@media (max-width: 400px) {
+    div {
+        padding-left: 0px;
+    }
+}
+</style>
+
+
 <main id='main-doc'>
+    <nav id='nav-bar'>
+        <header>Intro to Python</header>
+        <ul>
+            <li><a href="#Introduction_to_python">Introduction to python</a></li>
+            <li><a href='#Print_to_console'>Print to console</a></li>
+            <li><a href='#String_basics'>String basics</a></li>
+            <li><a href='#Arithmatic'>Arithmatic</a></li>
+            <li><a href='#Lists'>Lists</a></li>
+            <li><a href='#If...Else'>If...Else</a></li>
+        </ul>
+        
+    </nav>
     <div class='main-section' id='Introduction_to_python'>
         <h2>Introduction to python</h2>
         <p>Python is an easy to learn, powerful programming language. 
@@ -49,7 +105,7 @@
             <h2>Print to console</h2>
 
             <p>In many cases, you will need to see the output of a program visually, whether to ensure a portion of
-                code works, or to make sure your program is doing what it wants. This can be done with the print() function
+                code works, or to make sure your program is doing what you want. This can be done with the print() function
             </p>
 
             <code>print('Hello World!')
@@ -57,7 +113,7 @@
             </code>
 
             <p>Although this is a very simple use of print(), one can still see how easy it is to use and impliment. 
-                print() can output many data types, and even do math inside of it.
+                print() can output many data types, and even do math.
             </p>
 
             <code>print(4 + 2)
@@ -126,7 +182,7 @@
         <header>   
             <h2>Lists</h2>
 
-            <p>information in python can be stored in a list, also called an array in other languages. 
+            <p>iInformation in python can be stored in a list, also called an array in other languages. 
                 Many object types can be stored in a list, even other lists can be stored in a list!
             </p>
 
@@ -160,7 +216,7 @@
             </code>
 
             <p>While this is a very simple example of if else, it is easy to see the applications.
-                 They can run certain code if an argument is true or false, if an array contains a certain element,
+                 They can run certain code if an argument is true or false, if a list contains a certain element,
                   and many, many more. More information can be found at <a href='https://www.w3schools.com/python/python_conditions.asp'>w3schools.</a>
             </p>
         </header>
