@@ -5,6 +5,18 @@
 <header id=IntroHeader>
     <h1>An introduction to python</h1>
 </header>
+<nav id='nav-bar'>
+    <header>Intro to Python</header>
+    <ul>
+        <li><a href="#Introduction_to_python">Introduction to python</a></li>
+        <li><a href='#Print_to_console'>Print to console</a></li>
+        <li><a href='#String_basics'>String basics</a></li>
+        <li><a href='#Arithmatic'>Arithmatic</a></li>
+        <li><a href='#Lists'>Lists</a></li>
+        <li><a href='#If...Else'>If...Else</a></li>
+    </ul>
+    
+</nav>
 <main id='main-doc'>
     <div class='main-section' id='Introduction_to_python'>
         <h2>Introduction to python</h2>
@@ -85,7 +97,8 @@
         <header>
             <h2>Arithmatic</h2>
             <p>Like many programming langues, arithmatic is a very important concept, python is 
-                no exception. The various operators you can use in python are + - * / as well as the %, 
+                no exception. Some of the operators you will encounter in python are 
+                + (addition) - (subtraction) * (multiplication) / (division) as well as the % (modulus), 
                 which returns the remainder of two numbers when divided.
             </p>
 
@@ -109,21 +122,47 @@
         </header>
     </div>
 
-    <div class='main-section' id='For_loops'>
+    <div class='main-section' id='Lists'>
         <header>   
-            <h2>For loops</h2>
-            <p></p>
-            <code></code>
-            <p></p>
+            <h2>Lists</h2>
+
+            <p>information in python can be stored in a list, also called an array in other languages. 
+                Many object types can be stored in a list, even other lists can be stored in a list!
+            </p>
+
+            <code>
+                myList = [1, 2, 3, 'this string', 2nd string, ['another list!', 1, 2, 3]]
+            </code>
+
+            <p>A list is declared like any variable, only it must be opened and closed by 
+                square brackets. Inside a valid list, each object is seperated by a comma, as seen above.<br>
+                Many functions can be applied to a list, such as removing items, adding items,
+                seeing how long the list as and more.</p>
         </header>
     </div>
 
-    <div class='main-section' id='While_loops'>
+    <div class='main-section' id='If...Else'>
         <header>
-            <h2>While loops</h2>
-            <p></p>
-            <code></code>
-            <p></p>
+            <h2>If...Else</h2>
+            <p>An if else statement is used when you want your program to work logically. 
+                A human equivalent would be 'If it is raining, i need an umbrella, else I am ready to go without.'
+            </p>
+
+            <code>
+                a = 4<br><br>
+                if a > 10:<br>
+                    print('more than 10')<br><br>
+                
+                else:<br>
+                    print('less than 10')<br><br>
+
+                #console will log 'less than 10', since a is equal to 4
+            </code>
+
+            <p>While this is a very simple example of if else, it is easy to see the applications.
+                 They can run certain code if an argument is true or false, if an array contains a certain element,
+                  and many, many more. More information can be found at <a href='https://www.w3schools.com/python/python_conditions.asp'>w3schools.</a>
+            </p>
         </header>
     </div>
 
