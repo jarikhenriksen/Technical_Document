@@ -13,7 +13,7 @@ nav {
     display: flex;
     flex-direction: column;
     background-color: white;
-    height: 87%;
+    height: 50%;
     width: 150px;
     color: black;
     font-size: larger;
@@ -22,6 +22,10 @@ nav {
     border-style: solid;
     border-color: rgb(0, 0, 0)
 }
+  header {
+    font-size: 25px;
+    font-style: oblique;
+  }
 @media (max-width: 400px){
     nav {
         display: none;
@@ -47,14 +51,14 @@ code {
 h2 {
     text-decoration: underline;
 }
-div a:link {
+section a:link {
     color: blue;
 }
-div {
+section {
     padding-left: 230px;
 }
 @media (max-width: 400px) {
-    div {
+    section {
         padding-left: 0px;
     }
 }
@@ -62,20 +66,22 @@ div {
 
 
 <main id='main-doc'>
-    <nav id='nav-bar'>
+    <nav id='navbar'>
         <header>Intro to Python</header>
         <ul>
-            <li><a href="#Introduction_to_python">Introduction to python</a></li>
-            <li><a href='#Print_to_console'>Print to console</a></li>
-            <li><a href='#String_basics'>String basics</a></li>
-            <li><a href='#Arithmatic'>Arithmatic</a></li>
-            <li><a href='#Lists'>Lists</a></li>
-            <li><a href='#If...Else'>If...Else</a></li>
+            <li><a class='nav-link' href='#Introduction_to_python'>Introduction to python</a></li>
+            <li><a class='nav-link' href='#Print_to_console'>Print to console</a></li>
+            <li><a class='nav-link' href='#String_basics'>String basics</a></li>
+            <li><a class='nav-link' href='#Arithmatic'>Arithmatic</a></li>
+            <li><a class='nav-link' href='#Lists'>Lists</a></li>
+            <li><a class='nav-link' href='#If...Else'>If...Else</a></li>
         </ul>
         
     </nav>
-    <div class='main-section' id='Introduction_to_python'>
+    <section class='main-section' id='Introduction_to_python'>
+      <header>
         <h2>Introduction to python</h2>
+        </header>
         <p>Python is an easy to learn, powerful programming language. 
            Python is simple to use, but it is a real programming language, 
            offering much more structure and support for large programs 
@@ -99,10 +105,11 @@ div {
             <li>and there is so much information available, any questions I had always had an answer.</li>
         </ul>
 
-    </div>
-    <div class='main-section' id='Print_to_console'>
+    </section>
+    <section class='main-section' id='Print_to_console'>
         <header>
-            <h2>Print to console</h2>
+            Print to console
+      </header>
 
             <p>In many cases, you will need to see the output of a program visually, whether to ensure a portion of
                 code works, or to make sure your program is doing what you want. This can be done with the print() function
@@ -122,13 +129,13 @@ div {
 
             <p>print() is a very useful function indeed.</p>
 
-        </header>
-    </div>
+     
+    </section>
 
-    <div class='main-section' id='String_basics'>
+    <section class='main-section' id='String_basics'>
         <header>
-            <h2>String basics</h2>
-
+            String basics
+      </header>
             <p>A string is a group of ASCII characters, surrounded by quotation marks, 
                 either single or double. If you choose to use single quotes to begin the string, 
                 you must also use single quotes to close the string.
@@ -146,16 +153,17 @@ div {
                 scope of this document, but more information can be found at 
                 <a href='https://www.w3schools.com/python/python_strings.asp'>w3schools</a>
             </p>
-        </header>
-    </div>
+        
+    </section>
 
-    <div class='main-section' id='Arithmatic'>
+    <section class='main-section' id='Arithmatic'>
         <header>
-            <h2>Arithmatic</h2>
+            Arithmatic
+      </header>
             <p>Like many programming langues, arithmatic is a very important concept, python is 
                 no exception. Some of the operators you will encounter in python are 
-                + (addition) - (subtraction) * (multiplication) / (division) as well as the % (modulus), 
-                which returns the remainder of two numbers when divided.
+                + (addition) - (subtraction) * (multiplication) / (sectionision) as well as the % (modulus), 
+                which returns the remainder of two numbers when sectionided.
             </p>
 
             <code>5 % 10 = 0 #there is no remainder<br><br>
@@ -175,13 +183,12 @@ div {
             <p>For more information, visit <a href='https://www.w3schools.com/python/python_operators.asp'>
             w3schools</a></p>
 
-        </header>
-    </div>
+    </section>
 
-    <div class='main-section' id='Lists'>
+    <section class='main-section' id='Lists'>
         <header>   
-            <h2>Lists</h2>
-
+            Lists
+      </header>
             <p>iInformation in python can be stored in a list, also called an array in other languages. 
                 Many object types can be stored in a list, even other lists can be stored in a list!
             </p>
@@ -194,12 +201,12 @@ div {
                 square brackets. Inside a valid list, each object is seperated by a comma, as seen above.<br>
                 Many functions can be applied to a list, such as removing items, adding items,
                 seeing how long the list as and more.</p>
-        </header>
-    </div>
+    </section>
 
-    <div class='main-section' id='If...Else'>
+    <section class='main-section' id='If...Else'>
         <header>
-            <h2>If...Else</h2>
+            If...Else
+      </header>
             <p>An if else statement is used when you want your program to work logically. 
                 A human equivalent would be 'If it is raining, i need an umbrella, else I am ready to go without.'
             </p>
@@ -219,7 +226,7 @@ div {
                  They can run certain code if an argument is true or false, if a list contains a certain element,
                   and many, many more. More information can be found at <a href='https://www.w3schools.com/python/python_conditions.asp'>w3schools.</a>
             </p>
-        </header>
-    </div>
+       
+    </section>
 
 </main>
